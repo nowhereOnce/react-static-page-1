@@ -1,0 +1,67 @@
+* {
+  font-family: "Inter";
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-y: hidden; /* Opcional: Oculta el desbordamiento vertical si es necesario */
+}
+
+.navbar {
+  display: flex;
+  padding: 15px;
+  background-color: #21222A;
+}
+
+.navbar > h4 {
+  margin-left: auto;
+  color: white;
+}
+
+.navbar > h3 {
+  color: #00D8FF;
+}
+
+.navbar > img {
+  margin-right: 10px;
+}
+
+.main-content {
+  padding-left: 7%;
+  padding-top: 40px;
+  background-color: #282D35;
+  height: 100vh;
+  color: white;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+  overflow-y: hidden; /* Opcional: Oculta el desbordamiento vertical si es necesario */
+}
+
+.main-content > h1 {
+  font-size: 2.2rem;
+}
+
+.main-content > ul {
+  max-width: 80%;
+}
+
+.main-content > ul > li {
+  margin-bottom: 20px;
+  z-index: -1;
+}
+
+.main-content > ul > li::marker {
+  color: #00D8FF;
+  font-size: 1.2rem;
+}
+
+.main-content > svg {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 100px;
+  right: -100px;
+  z-index: -1;
+}
